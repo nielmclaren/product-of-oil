@@ -1,6 +1,4 @@
 
-console.log('REPLACE.JS');
-
 jQuery.fn.textWalk = function( fn ) {
     this.contents().each( jwalk );
 
@@ -16,6 +14,5 @@ jQuery.fn.textWalk = function( fn ) {
 };
 
 $('body').textWalk(function() {
-    this.data = this.data.replace('Jian', 'Nobody');
-    this.data = this.data.replace(/[Rr]eplace\s[Ss]ome\s[Tt]ext/g, 'with other text');
+    this.data = this.data.replace('Jian Ghomeshi', '[Nobody]');
 });
