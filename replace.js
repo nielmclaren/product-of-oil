@@ -14,5 +14,7 @@ jQuery.fn.textWalk = function( fn ) {
 };
 
 $('body').textWalk(function() {
+    this.data = this.data.replace('Jian', '[Nobody]');
+    this.data = this.data.replace('Ghomeshi', '[Nobody]');
     this.data = this.data.replace('Jian Ghomeshi', '[Nobody]');
 });
