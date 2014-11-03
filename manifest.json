@@ -3,7 +3,7 @@
 
   "name": "Jian Begone",
   "description": "a chrome extension to let us ignore jian ghomeshi and get on with our lives",
-  "version": "1.0",
+  "version": "0.1",
 
   "icons": {
     "16":  "icon-16.png",
