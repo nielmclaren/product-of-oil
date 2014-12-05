@@ -14,7 +14,26 @@ jQuery.fn.textWalk = function( fn ) {
 };
 
 $('body').textWalk(function() {
-    this.data = this.data.replace('Jian Ghomeshi', '[SERIOUSLY, GET ON WITH YOUR LIFE.]');
-    this.data = this.data.replace('Jian', '[STOP READING THIS.]');
-    this.data = this.data.replace('Ghomeshi', '[PLEASE. STOP.]');
+    var self = this;
+    var targets = [
+        'Jian',
+        'Ghomeshi',
+        'Jian Ghomeshi'
+    ];
+
+    var phrases = [
+        '[SERIOUSLY, GET ON WITH YOUR LIFE.]',
+        '[STOP READING THIS.]',
+        '[PLEASE. STOP.]'
+    ];
+
+    var getRandomPhrase = function() {
+        return phrases[Math.floor(Math.random() * phrases.length)];
+    };
+
+    targets
+        .sort(function(a, b) { return b.length - a.length; })
+        .forEach(function(target) {
+            self.data = self.data.replace(target, getRandomPhrase);
+        });
 });
