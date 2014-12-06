@@ -1,9 +1,9 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
 
-  "name": "Jian Begone",
-  "description": "a chrome extension to let us put the focus back on the real issue of the Jian Ghomeshi saga.",
-  "version": "0.2.1",
+  "name": "Product of Oil",
+  "description": "Chrome extension to emphasize oil products in webpage text",
+  "version": "0.0.1",
 
   "icons": {
     "16":  "icon-16.png",

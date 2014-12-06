@@ -16,15 +16,17 @@ jQuery.fn.textWalk = function( fn ) {
 $('body').textWalk(function() {
     var self = this;
     var targets = [
-        'Jian',
-        'Ghomeshi',
-        'Jian Ghomeshi'
+      'plastic',
+      'gas',
+      'gasoline',
+      'shopping bag',
+      'shopping bags',
+      'bottled water',
+      //...
     ];
 
     var phrases = [
-        '[SERIOUSLY, GET ON WITH YOUR LIFE.]',
-        '[STOP READING THIS.]',
-        '[PLEASE. STOP.]'
+      '[OIL PRODUCT]'
     ];
 
     var getRandomPhrase = function() {

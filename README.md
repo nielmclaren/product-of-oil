@@ -1,4 +1,4 @@
-jian-begone
-============
+product-of-oil
+==============
 
-a chrome extension to let us put the focus back on the real issue of the Jian Ghomeshi saga.
+Chrome extension to emphasize oil products in webpage text.
